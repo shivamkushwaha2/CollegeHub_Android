@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/lightBlue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightBlue">
+        <TextView
+            android:id="@+id/faq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Students"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card1"
+            android:layout_width="0dp"
+            android:backgroundTint="@color/white2"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/faq"
+            app:layout_constraintTop_toBottomOf="@id/faq"
+            app:strokeWidth="1dp">
+
+            <RelativeLayout
+                android:id="@+id/rel1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/Heading1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_toStartOf="@id/img1"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="5dp"
+                    android:text="ABC ID"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:visibility="gone"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/baseline_arrow_forward_ios_24" />
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card2"
+            android:backgroundTint="@color/white2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/card1"
+            app:layout_constraintTop_toBottomOf="@id/card1"
+            app:strokeWidth="1dp">
+
+            <RelativeLayout
+                android:id="@+id/rel2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/Heading2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_toStartOf="@id/img2"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="5dp"
+                    android:text="Achievements"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="gone"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/baseline_arrow_forward_ios_24" />
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card3"
+            android:backgroundTint="@color/white2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/card2"
+            app:layout_constraintTop_toBottomOf="@id/card2"
+            app:strokeWidth="1dp">
+
+            <RelativeLayout
+                android:id="@+id/rel3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/Heading3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_toStartOf="@id/img3"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="5dp"
+                    android:text="Disciplinary Action &amp; Anti Ragging Cell"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:visibility="gone"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/baseline_arrow_forward_ios_24" />
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card4"
+            android:backgroundTint="@color/white2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/card3"
+            app:layout_constraintTop_toBottomOf="@id/card3"
+            app:strokeWidth="1dp">
+
+            <RelativeLayout
+                android:id="@+id/rel4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/Heading4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_toStartOf="@id/img4"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="5dp"
+                    android:text="Online Status of Results"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_width="15dp"
+                    android:visibility="gone"
+                    android:layout_height="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/baseline_arrow_forward_ios_24" />
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card5"
+            android:layout_width="0dp"
+            android:backgroundTint="@color/white2"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/card4"
+            app:layout_constraintTop_toBottomOf="@id/card4"
+            app:strokeWidth="1dp">
+
+            <RelativeLayout
+                android:id="@+id/rel5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/Heading5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_toStartOf="@id/img5"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="5dp"
+                    android:text="Download Forms"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/img5"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:visibility="gone"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/baseline_arrow_forward_ios_24" />
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white2"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/card5"
+            app:layout_constraintTop_toBottomOf="@id/card5"
+            app:strokeWidth="1dp">
+
+            <RelativeLayout
+                android:id="@+id/rel6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/Heading6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_toStartOf="@id/img6"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="5dp"
+                    android:text="Admissions"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/img6"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/baseline_arrow_forward_ios_24" />
+
+                <TextView
+                    android:id="@+id/Tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Heading6"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="CUET-UG-2024"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+                <TextView
+                    android:id="@+id/Tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Tv1"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="PG Admission 2024"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+                <TextView
+                    android:id="@+id/Tv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Tv2"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="CRET 2023"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white2"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/card6"
+            app:layout_constraintTop_toBottomOf="@id/card6"
+            app:strokeWidth="1dp">
+
+            <RelativeLayout
+                android:id="@+id/rel7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/Heading7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_toStartOf="@id/img7"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="5dp"
+                    android:text="Desk"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/img7"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/baseline_arrow_forward_ios_24" />
+
+                <TextView
+                    android:id="@+id/Tv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Heading7"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Vice Chancellor's Desk"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+                <TextView
+                    android:id="@+id/Tv5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Tv4"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Dean of Arts Desk"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+                <TextView
+                    android:id="@+id/Tv6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Tv5"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Dean of Commerce Desk"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+                <TextView
+                    android:id="@+id/Tv7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Tv6"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Dean of Law Desk"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+                <TextView
+                    android:id="@+id/Tv8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Tv7"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Dean of Science Desk"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+                <TextView
+                    android:id="@+id/Tv9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Tv8"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="DSW's Desk"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+                <TextView
+                    android:id="@+id/Tv10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Tv9"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Proctor's Desk"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+                <TextView
+                    android:id="@+id/Tv11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Tv10"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Controller of Examination Desk"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+                <TextView
+                    android:id="@+id/Tv12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Tv11"
+                    android:layout_marginTop="11dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Registrar's Desk"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+                <TextView
+                    android:id="@+id/Tv13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Tv12"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Finance Officer Desk"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+                <TextView
+                    android:id="@+id/Tv14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Tv13"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Hindi Rajbhasha Cell"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white2"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/card7"
+            app:layout_constraintTop_toBottomOf="@id/card7"
+            app:strokeWidth="1dp">
+
+            <RelativeLayout
+                android:id="@+id/rel8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/Heading8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_toStartOf="@id/img8"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="5dp"
+                    android:text="Scholarships / Awards"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/img8"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/baseline_arrow_forward_ios_24" />
+
+                <TextView
+                    android:id="@+id/Tv15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Heading8"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Endowment Scholarship"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+                <TextView
+                    android:id="@+id/Tv16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Tv15"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Scholarships under government schemes"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+                <TextView
+                    android:id="@+id/Tv17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Tv16"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Meghnad Saha Award for Research Scholar"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white2"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/card8"
+            app:layout_constraintTop_toBottomOf="@id/card8"
+            app:strokeWidth="1dp">
+
+            <RelativeLayout
+                android:id="@+id/rel9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/Heading9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_toStartOf="@id/img9"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="5dp"
+                    android:text="University Placement Cell (UPC)"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/img9"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/baseline_arrow_forward_ios_24" />
+
+                <TextView
+                    android:id="@+id/Tv18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Heading9"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Vision and Mission"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+                <TextView
+                    android:id="@+id/Tv19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Tv18"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Notice / Circular"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+                <TextView
+                    android:id="@+id/Tv20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Tv19"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Contact"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+                <TextView
+                    android:id="@+id/Tv21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Tv20"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Gallery"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+                <TextView
+                    android:id="@+id/Tv22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Tv21"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Placement Reports"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+</layout>

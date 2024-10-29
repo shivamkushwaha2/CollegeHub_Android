@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="10dp"
+    android:layout_gravity="end"
+    android:background="@drawable/popup_background">
+
+    <TextView
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Semester"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second Semester"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Third Semester"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fourth Semester"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fifth Semester"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sixth Semester"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:textColor="@color/black" />
+
+</LinearLayout>

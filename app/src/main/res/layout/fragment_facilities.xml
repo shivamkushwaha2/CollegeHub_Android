@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/lightBlue"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightBlue">
+            <TextView
+                android:id="@+id/faq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Facilities"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card1"
+                android:layout_width="0dp"
+                android:backgroundTint="@color/white2"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/faq"
+                app:layout_constraintTop_toBottomOf="@id/faq"
+                app:strokeWidth="1dp">
+
+                <RelativeLayout
+                    android:id="@+id/rel1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/Heading1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="5dp"
+                        android:text="Central Library"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/Tv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Heading1"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="About"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv1"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Library Rules"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv2"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Collection"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv3"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Services"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv4"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Alphabetical List of Print Journals "
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv5"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="E-Journals available through UGC- INFLIBNET-e-Shodhsindhu"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv6"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="E-Journals available through Subscription"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv7"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="E-Databases"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv8"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="E-books"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv9"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Seminar / Conference / Workshop / Symposium"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv10"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Plagiarism"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv11"
+                        android:layout_marginTop="11dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Open Educational Resources"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv12"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Remote Access"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv13"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="WebOpac"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv14"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Institutional Repository"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv15"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Submission of Ph.D. Thesis (Soft Copy)"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv16"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Indian Research Information Network System (IRINS)"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv17"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Shodh-Chakra: A Gateway to Researchers for Resources"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv18"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="VIDWAN: Expert Database and National Researcher Network"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv19"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Contact Us"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv20"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Downloads"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card2"
+                android:backgroundTint="@color/white2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/card1"
+                app:layout_constraintTop_toBottomOf="@id/card1"
+                app:strokeWidth="1dp">
+
+                <RelativeLayout
+                    android:id="@+id/rel2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/Heading2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="5dp"
+                        android:text="Hostels Accommodation (Boys)"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/Tv22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Heading2"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Amaranatha Jha Hostel"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv22"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Diamond Jubilee Hostel"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv24"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv23"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Sir G. N. Jha Hostel"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv24"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="International House"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv26"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv25"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Sir P. C. B. Hostel"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv27"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv26"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Sir Sunder Lal Hostel"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv27"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Dr. Tara Chand Hostel"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv29"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv28"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Sir Radha Krishnan Boys Hostel"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv30"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv29"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Shatabdi Boys Hostel"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card3"
+                android:backgroundTint="@color/white2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/card2"
+                app:layout_constraintTop_toBottomOf="@id/card2"
+                app:strokeWidth="1dp">
+
+                <RelativeLayout
+                    android:id="@+id/rel3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/Heading3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="5dp"
+                        android:text="Hostels Accommodation (Girls)"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/Tv31"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Heading3"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Priya Darshini Hostel"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv32"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv31"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Shatabdi Girls Hostel"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv32"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Sarojini Naidu Hostel"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv34"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv33"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Kalpana Chawala Hostel"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv35"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv34"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Hall of Residence"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/Tv36"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tv35"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Mahadevi Verma Girl's Hostel"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card4"
+                android:backgroundTint="@color/white2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:elevation="20dp"
+                android:visibility="gone"
+                app:cardCornerRadius="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/card3"
+                app:layout_constraintTop_toBottomOf="@id/card3"
+                app:strokeWidth="1dp">
+
+                <RelativeLayout
+                    android:id="@+id/rel4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/Heading4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_toStartOf="@id/img4"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="5dp"
+                        android:text="Online Status of Results"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/img4"
+                        android:layout_width="15dp"
+                        android:visibility="gone"
+                        android:layout_height="15dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="4dp"
+                        android:src="@drawable/baseline_arrow_forward_ios_24" />
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card5"
+                android:layout_width="0dp"
+                android:backgroundTint="@color/white2"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/card3"
+                app:layout_constraintTop_toBottomOf="@id/card3"
+                app:strokeWidth="1dp">
+
+                <RelativeLayout
+                    android:id="@+id/rel5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/Heading5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="5dp"
+                        android:text="National Cadet Corps"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white2"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/card5"
+                app:layout_constraintTop_toBottomOf="@id/card5"
+                app:strokeWidth="1dp">
+
+                <RelativeLayout
+                    android:id="@+id/rel6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/Heading6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="5dp"
+                        android:text="National Service Scheme"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white2"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/card6"
+                app:layout_constraintTop_toBottomOf="@id/card6"
+                app:strokeWidth="1dp">
+
+                <RelativeLayout
+                    android:id="@+id/rel7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/Heading7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="5dp"
+                        android:text="Athletic Association"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white2"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="25dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/card7"
+                app:layout_constraintTop_toBottomOf="@id/card7"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:strokeWidth="1dp">
+
+                <RelativeLayout
+                    android:id="@+id/rel8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/Heading8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_marginEnd="5dp"
+                        android:text="Guest House"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

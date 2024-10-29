@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white2"
+    android:layout_marginTop="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white2"
+        android:elevation="25dp"
+        app:cardCornerRadius="6dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/userImage"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:src="@drawable/baseline_account_circle_24"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:textColor="#212121"
+                android:textSize="16sp"
+                android:text="Shivam kushwaha"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/userImage"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/userImage" />
+
+            <TextView
+                android:id="@+id/createdAt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="4dp"
+                android:text="just now"
+                app:layout_constraintLeft_toRightOf="@id/userImage"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/userName" />
+
+            <TextView
+                android:id="@+id/postTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="#212121"
+                android:text="Hello everyone!"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/userImage" />
+
+            <ImageView
+                android:id="@+id/postImage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/post_img"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="30dp"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:fitsSystemWindows="true"
+                app:layout_constraintTop_toBottomOf="@id/postTitle" />
+            <ImageView
+                android:id="@+id/likeButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/like_icon"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/postImage" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toEndOf="@id/likeCount"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/comment"
+                android:layout_marginStart="16dp" />
+            <!--                android:background="@drawable/ic_baseline_comment_24"-->
+
+            <TextView
+                android:id="@+id/likeCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="23"
+                app:layout_constraintBottom_toBottomOf="@id/likeButton"
+                app:layout_constraintLeft_toRightOf="@id/likeButton"
+                app:layout_constraintTop_toTopOf="@id/likeButton" />
+
+
+<!--            <ImageView-->
+<!--                android:id="@+id/deletepost"-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:visibility="visible"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/postImage"-->
+<!--                app:layout_constraintEnd_toEndOf="parent" />-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

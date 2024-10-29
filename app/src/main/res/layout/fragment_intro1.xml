@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/introfrag1_img1"
+        android:layout_width="wrap_content"
+        android:layout_height="455dp"
+        android:src="@drawable/introfrag1_img1"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/introfrag1_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to CollegeHub!"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:gravity="center_horizontal"
+        android:textSize="26sp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_semibold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/introfrag1_img1" />
+
+    <TextView
+        android:id="@+id/introfrag1_tv2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Welcome to CollegeHub, your all-in-one platform to stay connected with your college community. Engage with college news, updates, and student discussions—all in one place!"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/introfrag1_tv1"
+        app:layout_constraintStart_toStartOf="@+id/introfrag1_tv1"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/introfrag1_tv1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

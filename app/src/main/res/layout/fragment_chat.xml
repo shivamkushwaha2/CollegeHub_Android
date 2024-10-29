@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background= "@color/lightBlue"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/idTILQuery"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- text view for displaying question-->
+            <TextView
+                android:id="@+id/idTVQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:padding="4dp"
+                android:text="Prompt"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <!-- text view for displaying response-->
+            <TextView
+                android:id="@+id/idTVResponse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="14dp"
+                android:padding="4dp"
+                android:text="Response"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </ScrollView>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progress_bar"
+        android:visibility="gone"/>
+    <!-- text field for asking question-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/idTILQuery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:hint="Enter your query"
+        android:padding="5dp"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp"
+            app:cardCornerRadius="8dp"
+            android:layout_height="50dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/idEdtQuery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white2"
+            android:ems="10"
+            android:imeOptions="actionSend"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:hint="Enter your query"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="14sp" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:id="@+id/send"
+            android:layout_marginEnd="5dp"
+            app:cardCornerRadius="8dp"
+            android:backgroundTint="#94C2FB"
+            android:layout_gravity="end|center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/baseline_send_24"/>
+        </com.google.android.material.card.MaterialCardView>
+        </com.google.android.material.card.MaterialCardView>
+    </com.google.android.material.textfield.TextInputLayout>
+</RelativeLayout>

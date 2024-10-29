@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBlue">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightBlue">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/baseline_arrow_back_ios_new_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:id="@+id/dp"
+                android:src="@drawable/profile_pic5"
+                android:layout_marginTop="25dp"
+                app:layout_constraintStart_toStartOf="@id/back"
+                app:layout_constraintTop_toBottomOf="@id/back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ABC XYZ"
+                android:textSize="20sp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/black"
+                android:id="@+id/name"
+                app:layout_constraintStart_toEndOf="@id/dp"
+                app:layout_constraintTop_toTopOf="@id/dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginBottom="10dp"/>
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:id="@+id/editProfile"-->
+<!--                android:src="@drawable/edit_icon"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toEndOf="@id/name"-->
+<!--                app:layout_constraintTop_toTopOf="@id/name" />-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#A6000000"
+                android:id="@+id/occupation"
+                app:layout_constraintStart_toEndOf="@id/dp"
+                app:layout_constraintTop_toBottomOf="@id/name"
+                android:layout_marginStart="14dp"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="University of Allahabad"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#A6000000"
+                android:id="@+id/url"
+                app:layout_constraintStart_toEndOf="@id/dp"
+                app:layout_constraintTop_toBottomOf="@id/occupation"
+                android:layout_marginStart="14dp"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15k Followers    1k Following"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#A6000000"
+                android:id="@+id/followers"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@id/dp"
+                app:layout_constraintTop_toBottomOf="@id/url"
+                android:layout_marginStart="14dp"
+                android:layout_marginBottom="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/line1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="#19000000"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                app:layout_constraintTop_toBottomOf="@id/line1"
+                app:layout_constraintStart_toStartOf="@id/dp"
+                android:text="Bio"
+                android:id="@+id/Bio"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="#AB000000"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/bio"
+                app:layout_constraintTop_toBottomOf="@id/Bio"
+                app:layout_constraintStart_toStartOf="@id/dp"
+                android:hint="Hello, I am ABC, Android developer, Pursuing MCA from UoA. "
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/line4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="#19000000"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bio"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/line4"
+                app:layout_constraintStart_toStartOf="@id/bio"
+                android:text="Educational background"
+                android:id="@+id/Education"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="#AB000000"
+                app:layout_constraintEnd_toEndOf="@id/bio"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintTop_toBottomOf="@id/Education"
+                app:layout_constraintStart_toStartOf="@id/Education"
+                android:hint="University of Allahabad\nMaster of computer Applications(2023-2025)"
+                android:id="@+id/Educationbackground"
+                android:textSize="13sp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@id/Education"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/line2"
+        app:layout_constraintStart_toStartOf="@id/Educationbackground"
+        android:text="Skills"
+        android:id="@+id/skill"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="#AB000000"
+        app:layout_constraintEnd_toEndOf="@id/bio"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/skill"
+        app:layout_constraintStart_toStartOf="@id/skill"
+        android:hint="Enter your skills like Java, Android Development etc."
+        android:id="@+id/skills"
+        android:textSize="13sp"
+        android:background="@null"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/Education"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/line3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="#19000000"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skills"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/line3"
+        app:layout_constraintStart_toStartOf="@id/skills"
+        android:text="Experience"
+        android:id="@+id/Experience"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="#AB000000"
+        app:layout_constraintEnd_toEndOf="@id/bio"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/experience"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Enter your work or project experience"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@id/Education"
+        app:layout_constraintStart_toStartOf="@id/Experience"
+        app:layout_constraintTop_toBottomOf="@id/Experience" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/line2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="#19000000"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Educationbackground"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/nextButton"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/poppins_regular"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:textSize="16sp"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:cornerRadius="8dp"
+        app:layout_constraintTop_toBottomOf="@id/experience"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+<!--            <ImageView-->
+<!--                android:id="@+id/setting"-->
+<!--                android:layout_width="16dp"-->
+<!--                android:layout_height="16dp"-->
+<!--                android:layout_marginTop="50dp"-->
+<!--                android:src="@drawable/baseline_settings_24"-->
+<!--                app:layout_constraintStart_toStartOf="@id/Educationbackground"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/line2" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/settingsTv"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:fontFamily="@font/poppins_medium"-->
+<!--                android:text="Settings"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="15sp"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/setting"-->
+<!--                app:layout_constraintStart_toEndOf="@id/setting"-->
+<!--                app:layout_constraintTop_toTopOf="@id/setting" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/privacy"-->
+<!--                android:layout_width="16dp"-->
+<!--                android:layout_height="16dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:src="@drawable/baseline_lock_24"-->
+<!--                app:layout_constraintStart_toStartOf="@id/setting"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/setting" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:fontFamily="@font/poppins_medium"-->
+<!--                android:text="Privacy &amp; policy"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="15sp"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/privacy"-->
+<!--                app:layout_constraintStart_toEndOf="@id/privacy"-->
+<!--                app:layout_constraintTop_toTopOf="@id/privacy" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/logout"-->
+<!--        android:layout_width="24dp"-->
+<!--        android:layout_height="24dp"-->
+<!--        android:src="@drawable/baseline_logout_24"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/textView3"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/textView3"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView3" />-->
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Logout"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        app:drawableEndCompat="@drawable/baseline_logout_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nextButton" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

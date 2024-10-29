@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/introfrag1_img1"
+        android:layout_width="0dp"
+        android:layout_height="432dp"
+        android:src="@drawable/introfrag3_img"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/introfrag1_tv1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textFontWeight="600"
+        android:text="Explore and Plan Your College Journey"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center_horizontal"
+        android:textSize="24sp"
+        android:fontFamily="@font/poppins_semibold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/introfrag1_img1" />
+
+    <TextView
+        android:id="@+id/introfrag1_tv2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="From placements to campus facilities, explore every aspect of college life. View event galleries, stay informed about upcoming placements, and use the interactive college map to navigate the campus. All this, with an AI chatbot from OpenAI."
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/introfrag1_tv1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.insoft.collegehub.Fragments.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_feedFragment"
+            app:destination="@id/feedFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_exploreFragment"
+            app:destination="@id/exploreFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_createPostFragment"
+            app:destination="@id/createPostFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_notesFragment"
+            app:destination="@id/notesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.insoft.collegehub.Fragments.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/collegeUpdatesFragment"
+        android:name="com.insoft.collegehub.Fragments.CollegeUpdatesFragment"
+        android:label="fragment_college_updates"
+        tools:layout="@layout/fragment_college_updates" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="com.insoft.collegehub.Fragments.FeedFragment"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_feed" >
+        <action
+            android:id="@+id/action_feedFragment_to_collegeUpdatesFragment"
+            app:destination="@id/collegeUpdatesFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.insoft.collegehub.Fragments.ProfileFragment"
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_exploreFragment"
+            app:destination="@id/exploreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exploreFragment"
+        android:name="com.insoft.collegehub.Fragments.ExploreFragment"
+        android:label="fragment_explore"
+        tools:layout="@layout/fragment_explore" >
+        <action
+            android:id="@+id/action_exploreFragment_to_studentsFragment"
+            app:destination="@id/studentsFragment" />
+        <action
+            android:id="@+id/action_exploreFragment_to_facilitiesFragment"
+            app:destination="@id/facilitiesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createPostFragment"
+        android:name="com.insoft.collegehub.Fragments.CreatePostFragment"
+        android:label="CreatePostFragment" >
+        <action
+            android:id="@+id/action_createPostFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentsFragment"
+        android:name="com.insoft.collegehub.Fragments.StudentsFragment"
+        android:label="StudentsFragment" >
+        <action
+            android:id="@+id/action_studentsFragment_to_exploreFragment"
+            app:destination="@id/exploreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/facilitiesFragment"
+        android:name="com.insoft.collegehub.Fragments.FacilitiesFragment"
+        android:label="FacilitiesFragment" >
+        <action
+            android:id="@+id/action_facilitiesFragment_to_exploreFragment"
+            app:destination="@id/exploreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.insoft.collegehub.Fragments.NotesFragment"
+        android:label="fragment_notes"
+        tools:layout="@layout/fragment_notes" >
+        <action
+            android:id="@+id/action_notesFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_notesFragment_to_viewNotesFragment"
+            app:destination="@id/viewNotesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewNotesFragment"
+        android:name="com.insoft.collegehub.Fragments.ViewNotesFragment"
+        android:label="ViewNotesFragment" >
+        <action
+            android:id="@+id/action_viewNotesFragment_to_notesFragment"
+            app:destination="@id/notesFragment" />
+    </fragment>
+</navigation>

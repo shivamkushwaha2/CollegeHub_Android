@@ -31,3 +31,9 @@ Notes Upload and Download(Upload requires a permission by me)
 Profile Section
 
 Complete college website in mobile friendly layout. All the important options and links like admit card, pay fees, results etc. are present on main screen
+
+https://github.com/user-attachments/assets/19d7a87e-fcad-46d8-ab7a-a0ead5501444
+
+BACKEND - https://github.com/shivamkushwaha2/CollegeHub  
+
+

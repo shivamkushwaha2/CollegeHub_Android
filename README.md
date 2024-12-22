@@ -1,5 +1,6 @@
 CollegeHub is an innovative Android application developed using Kotlin to streamline and enhance the college experience for students.
 With CollegeHub, students can access real-time updates from the college(University of Allahabad) and utilize an AI-powered chatbot for quick assistance. The app provides easy access to essential college information like courses, fees, and placements. It also allows notes sharing, students can upload and download notes of various subjects.
+
 The application development involves several key technologies:
 
 	Android XML: Used for designing and structuring page layouts within the app.
@@ -8,32 +9,33 @@ The application development involves several key technologies:
 
 	Node.js: Utilized for server-side scripting, providing a scalable and efficient runtime environment for the backend.
 
-	Express.js: Serves as a web application framework for Node.js, used to build robust and scalable server-side applications and APIs.
+	Express.js: Serves as a web application framework for Node.js, used to build APIs.
 
 	MongoDB: Used as NoSQL database to store and manage application data in a flexible, scalable manner.
 
-	Visual Studio Code (VS Code): Used as a code editor for backend development, 		offering a lightweight and powerful environment for writing and managing code.
+	Visual Studio Code (VS Code): Used as a code editor for backend development
 
-	Postman: Used this software to test all the APIs developed for the application.
+	Postman: Used to test all the APIs developed for the application.
 
 
 
 Main Features - 
 
-A Centralized Platform for college updates, academic resources, and community interactions.
+- A Centralized Platform for college updates, academic resources, and community interactions.
 
-Notifications Tab for students to view all notifications and announcements related to the college(UoA).
+- Notifications Tab for students to view all notifications and announcements related to the college(UoA).
 
-An AI Chatbot(Gemini API)
+- An AI Chatbot(Gemini API)
 
-Notes Upload and Download(Upload requires a permission by me)
+- Notes Upload and Download(Upload requires a permission by me)
 
-Profile Section
+- Profile Section
 
-Complete college website in mobile friendly layout. All the important options and links like admit card, pay fees, results etc. are present on main screen
+- Complete college website in mobile friendly layout. All the important options and links like admit card, pay fees, results etc. are 
+  present on main screen
 
 https://github.com/user-attachments/assets/19d7a87e-fcad-46d8-ab7a-a0ead5501444
 
-BACKEND - https://github.com/shivamkushwaha2/CollegeHub  
+BACKEND - https://github.com/shivamkushwaha2/CollegeHub (Deployed on Vercel)
 
 
